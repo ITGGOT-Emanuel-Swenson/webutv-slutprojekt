@@ -1,0 +1,7 @@
+2017 - förster lektion
+
+2017-05-02
+organiserar struktur
+fixat backgrund psd och lagt in den i html med skuggning
+2017-05-09
+byggt mer på sidskelet
