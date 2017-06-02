@@ -113,8 +113,8 @@ header, nav, main, footer {
     margin-bottom: 1em;
     width: 900px;
     background-color: #0a0a0a;
+    background: rgba(0,0,0,0.4);
     box-shadow: 5px 5px 2px #202020;
-    opacity: 0.9;
     color: #FFFFFF;
 }
 nav ul {
@@ -169,8 +169,15 @@ footer ul {
 li {
     text-decoration: underline;
 }
+main {
+    padding: 10px;
+}
 
-
+main #content {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
 
 
 

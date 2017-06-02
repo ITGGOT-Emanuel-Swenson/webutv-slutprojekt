@@ -5,3 +5,5 @@ organiserar struktur
 fixat backgrund psd och lagt in den i html med skuggning
 2017-05-09
 byggt mer på sidskelet
+2017-06-01
+fixar igång git ordentligt
