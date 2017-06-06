@@ -1,0 +1,27 @@
+
+
+@media only screen and (min-device-width: 375px) {
+    #climber {
+        background-image: url("../img/mobil_climber.jpg");
+        background-repeat: no-repeat;
+        height: 288px;
+        margin-left: 40px;
+    }
+
+}
+
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1079px) {
+    #climber {
+        background-image: url("../img/desktop_climber.jpg");
+        background-repeat: no-repeat;
+        height: 767px;
+    }
+}
+@media only screen and (min-device-width: 1080px) {
+    #climber {
+        background-image: url("../img/desktop_climber.jpg");
+        background-repeat: no-repeat;
+        height: 767px;
+    }
+}

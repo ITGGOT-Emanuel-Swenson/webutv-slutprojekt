@@ -25,7 +25,7 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #0d0bfc;
     text-shadow: none;
 }
 
@@ -93,11 +93,153 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
+
+   som om ni aldrig skulle använda boilerplate
    ========================================================================== */
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 479px) {
+    body {
+        background-image: url("../img/berg2.jpg");
+        background-position: center top;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        width: 100%;
+
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+
+    /*av någon anledning är bredden alltid 395px på sidan hur jag än gör
+    lika bra att ta bort horizontel skroll då, ingen skillnad!
+    */
+
+
+    #container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+    header, nav, main, footer {
+        margin-bottom: 1em;
+        width: 100%;
+        max-width: 370px;
+        background-color: #0a0a0a;
+        background: rgba(0, 0, 0, 0.7);
+        box-shadow: 5px 5px 2px #202020;
+        color: #FFFFFF;
+        padding: 10px;
+        text-align: center;
+        }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+    nav {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul a li {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 2em;
+        margin-right: 2em;
+        min-width: 50px;
+        height: 50px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+
+        text-align: center;
+    }
+    nav ul a:nth-child(2) {
+        border-left: 5px solid grey;
+        border-right: 5px solid grey;
+    }
+
+
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1079px) {
+    body {
+        background-image: url("../img/berg2.jpg");
+        background-position: center top;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        width: 100%;
+
+    }
+
+
+    #container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+    header, nav, main, footer {
+        margin-bottom: 1em;
+        width: 900px;
+        background-color: #0a0a0a;
+        background: rgba(0, 0, 0, 0.7);
+        box-shadow: 5px 5px 2px #202020;
+        color: #FFFFFF;
+        padding: 10px;
+        text-align: center;
+        }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+    nav {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul a li {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 2em;
+        margin-right: 2em;
+        min-width: 50px;
+        height: 50px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+
+        text-align: center;
+    }
+    nav ul a:nth-child(2) {
+        border-left: 5px solid grey;
+        border-right: 5px solid grey;
+    }
+}
+
+@media only screen and (min-device-width: 1080px) {
 body {
-    margin: 0;
-    background-image: url("../img/berg_vid.png");
+    background-image: url("../img/berg2.jpg");
     background-position: center top;
     background-attachment:fixed;
     background-repeat: no-repeat;
@@ -113,9 +255,10 @@ header, nav, main, footer {
     margin-bottom: 1em;
     width: 900px;
     background-color: #0a0a0a;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.8);
     box-shadow: 5px 5px 2px #202020;
     color: #FFFFFF;
+    padding: 15px;
 }
 nav ul {
     list-style-type: none;
@@ -150,6 +293,10 @@ nav ul a li {
 nav ul a li:hover {
     background-color: #888888;
 }
+nav ul a:nth-child(2) {
+        border-left: 5px solid grey;
+        border-right: 5px solid grey;
+    }
 
 header {
     display: flex;
@@ -161,7 +308,7 @@ header {
 
 footer {
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 8em;
 }
 footer ul {
     margin: 0;
@@ -170,15 +317,17 @@ li {
     text-decoration: underline;
 }
 main {
-    padding: 10px;
 }
 
 main #content {
     display: flex;
     flex-direction: column;
     justify-items: center;
+    margin-left: 15px;
 }
 
+
+}
 
 
 

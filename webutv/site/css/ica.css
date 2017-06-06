@@ -1,0 +1,35 @@
+
+@media only screen and (min-device-width: 1080px) {
+#side_by_side {
+    display: flex;
+    flex-direction: row;
+}
+
+#side_by_side p {
+    margin-left: 2em;
+}
+
+#pic1, #pic2 {
+    background-image: url("../img/ica_sprite.jpg");
+    background-repeat: no-repeat;
+}
+
+#pic1 {
+    height: 434px;
+    background-position: 0px 0px;
+}
+#pic2 {
+    height: 479px;
+    background-position: 0px -479px;
+}
+img {
+    height: 435px;
+}
+}
+/* enheter:
+dekstoppu 1080-1440
+
+iPhone 7 375 667
+
+iPad Pro 1024 1366
+*/

@@ -1,0 +1,12 @@
+#bild {
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+main #content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
